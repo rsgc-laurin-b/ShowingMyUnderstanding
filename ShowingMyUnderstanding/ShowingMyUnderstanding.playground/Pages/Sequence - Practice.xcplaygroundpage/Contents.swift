@@ -31,36 +31,19 @@ let canvas = Canvas(width: 300, height: 300)
 
 // Replace this comment and add your code below...
 
-
-// bottom left circle
-canvas.drawShapesWithBorders = false
-canvas.drawShapesWithFill = true
-canvas.fillColor = Color.init(hue: 200, saturation: 100, brightness: 100, alpha: 75)
-canvas.drawEllipse(centreX: 75, centreY: 75, width: 75, height: 75)
-
-// Top left circle
-canvas.drawShapesWithBorders = false
-canvas.drawShapesWithFill = true
-canvas.fillColor = Color.init(hue: 200, saturation: 100, brightness: 100, alpha: 75)
-canvas.drawEllipse(centreX: 75, centreY: 225, width: 75, height: 75)
-
-// middle circle
-canvas.drawShapesWithBorders = false
-canvas.drawShapesWithFill = true
-canvas.fillColor = Color.init(hue: 200, saturation: 100, brightness: 100, alpha: 75)
-canvas.drawEllipse(centreX: 150, centreY: 75, width: 75, height: 75)
+// Top and bottom left circles
 
 
-// top and bottom right circle
-canvas.drawShapesWithBorders = false
-canvas.drawShapesWithFill = true
-canvas.fillColor = Color.init(hue: 360, saturation: 100, brightness: 100, alpha: 75)
-canvas.drawEllipse(centreX: 225, centreY: 225, width: 75, height: 75)
-canvas.drawEllipse(centreX: 225, centreY: 75, width: 75, height: 75)
 
-//drawing lines
+//drawing blue lines
+canvas.lineColor = Color.init(hue: 200, saturation: 100, brightness: 100, alpha: 90)
+canvas.drawLine(fromX: 75, fromY: 75, toX: 75, toY: 225, lineWidth: 75)
+canvas.drawLine(fromX: 75, fromY: 225, toX: 150, toY: 75, lineWidth: 75)
 
-
+//drawing red lines
+canvas.lineColor = Color.init(hue: 360, saturation: 100, brightness: 100, alpha: 90)
+canvas.drawLine(fromX: 225, fromY: 225, toX: 225, toY: 75, lineWidth: 75)
+canvas.drawLine(fromX: 225, fromY: 225, toX: 150, toY: 75, lineWidth: 75)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
